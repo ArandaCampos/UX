@@ -8,12 +8,11 @@ body{
     inset: 15px;
 }
 
-.btn-spin button{
+.btn-spin img{
     width: 100px;
     height: 100px;
     display: block;
     border-radius: 50%;
-    background-color: #012030;
 
     border: none;
 }
