@@ -64,7 +64,6 @@ img{
     }
     to{
         visibility: visible;
-        /* transform: translateX(-100px); */
         width: 200px;
     }
 }
