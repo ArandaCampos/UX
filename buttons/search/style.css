@@ -1,9 +1,3 @@
-body{
-    background-color: whitesmoke;
-    border: none;
-    margin: none;
-}
-
 input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
