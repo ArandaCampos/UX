@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    background-color: darkgrey;
+}
+
+.context-menu{
+    visibility: hidden;
+    position: relative;
+    width: 280px;
+    margin: none;
+    border-radius: 5px;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.context-menu > .itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.context-menu > .itens > li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 3px 20px 3px 20px;
+}
+
+li > span > a, li > span{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+}
+
+li > span {
+    color: grey;
+}
+
+li:hover{
+    background-color: rgba(20, 20, 20, 0.9);
+}
