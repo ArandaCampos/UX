@@ -2,7 +2,7 @@
 
 ### Objetivo
 
-Disponibilizar animações e tecnicas de web design
+Disponibilizar animações e técnicas de web design
 
 ### Como usar
 
