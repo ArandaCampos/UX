@@ -1,0 +1,63 @@
+:root{
+    --width: 80px;
+    --height: 80px;
+}
+
+.icon{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: var(--width);
+    height: var(--height);
+}
+
+.icon > img{
+    position: relative;
+    bottom: 0%;
+    left: 10%;
+    width: 70%;
+}
+
+.icon > div {
+    position: relative;
+    left: calc(0% - 2px);
+    height: 30%;
+    width: calc(100% - 4px);
+    
+    opacity: 0;
+    
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon > div > span::after{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    content: attr(data-tooltip);
+    font-size: 70%;
+    color: whitesmoke;
+}
+
+.icon:hover > div{
+    animation: up 0.5s ease forwards;
+}
+
+@keyframes up{
+    from{
+        top: 30%;
+    }
+    20%{
+        opacity: 0;
+    }
+    to{
+        top: -5%;
+        opacity: 100;
+    }
+}
