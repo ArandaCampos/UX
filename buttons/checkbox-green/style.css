@@ -5,6 +5,7 @@
 
     height: 100px;
     width: 100px;
+    border-radius: 10%;
     border: 3px solid gray;
 
     cursor: pointer;
@@ -16,6 +17,7 @@
 
 @keyframes check{
     to{
+        border-radius: 0%;
         width: 50px;
         transform: rotate(45deg);
         left: 120px;
