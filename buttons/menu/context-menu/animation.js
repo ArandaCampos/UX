@@ -7,8 +7,11 @@ document.addEventListener("click", function(event) {
     var screenWidth = screen.width;
     var screenHeight = screen.height;
 
+    console.log(screenHeight)
+    console.log(y)
+
     x = x + 280 > screenWidth ? x - 280 : x
-    y = y + 220 > screenHeight ? y - 220 : y
+    y = y + 400 > screenHeight ? y - 220 : y
 
     if (context.style.visibility === 'visible'){
         context.style.visibility = 'hidden'
