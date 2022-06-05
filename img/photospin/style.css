@@ -1,0 +1,47 @@
+body{
+    background-color: #DAFDBA;
+}
+
+.btn-spin{
+    max-width: 150px;
+    position: relative;
+    inset: 15px;
+}
+
+.btn-spin img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+
+    border: none;
+}
+
+.btn-spin::before{
+    content: "";
+
+    position: absolute;
+    inset: -15px;
+    width: 118px;
+    height: 118px;
+
+    border: 6px solid #DAFDBA;
+    border-top-color: #012030;
+    border-bottom-color: #012030;
+    border-radius: 50%;
+
+    z-index: -1;
+
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
