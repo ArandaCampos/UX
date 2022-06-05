@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+:root{
+    --width-card: 250px;
+    --height-card: 300px;
+    --gap-cards: 20px;
+    --width-section: 796px;
+    --gap-section: 200px;
+    --width-carousel: 3600px;
+}
+
+body{
+    background-color: #100e17;
+    border: none;
+    margin: none;
+    overflow: hidden;
+}
+
+.position-card{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-cards);
+}
+
+.card{
+    height: var(--height-card);
+    width: var(--width-card);
+    border-radius: 20px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    animation: 0.42 ease-out;
+}
+
+.side-up{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 35%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-section{
+    position: relative;
+    top: 25px;
+    left: 60px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.line{
+    position: absolute;
+    top: 165px;
+    left: 20px;
+    height: 5px;
+    width: 210px;
+    background-color: #2e3033;
+}
+
+
+.full-line {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, #DAFDBA 0%, #45C4B0 65%, #012030 100%);
+    transition: 0.4s ease-out;
+}
+
+.card:hover .full-line {
+    width: 210px;
+    transition: 0.6s ease-out;
+}
+
+.card:hover{
+    transform: translateY(-30px);
+    transition: 0.5 ease-out;
+}
+
+.side-down{
+    padding-top: 22%;
+}
+
+.data-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title, .subtitle{
+    position: relative;
+    top: 0px;
+    left: 15%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.subtitle{
+    top: -25px;
+    font-weight: 300;
+    font-size: medium;
+}
+.title{
+    font-size: larger;
+    font-weight: 500;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--width-carousel);
+	padding: 80px;
+    gap: var(--gap-section);
+
+    position: relative;
+    animation: start 0.8s ease forwards;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+	overflow: hidden;
+
+    padding: calc(var(--gap-section) / 2);
+    width: var(--width-section);
+    gap: 2vw;
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu{
+    position: absolute;
+    top: 520px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.circle{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    box-shadow: -1rem 0 3rem #000;
+}
+
+.circle:hover{
+    background-color: #45C4B0;
+}
+
+@keyframes oneToTwo{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -1196px;
+    }
+}
+
+@keyframes oneToThree{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -2392px;
+    }
+}
+
+@keyframes twoToOne{
+    from{
+        left: -1196px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes twoToThree{
+    from{
+        left: -1196px;
+    }
+    to{
+        left: -2392px;
+    }
+}
+
+@keyframes threeToOne{
+    from{
+        left: -2392px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes threeToTwo{
+    from{
+        left: -2392px;
+    }
+    to{
+        left: -1196px;
+    }
+}
