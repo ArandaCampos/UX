@@ -19,7 +19,6 @@ body{
 .position-card{
     display: flex;
     flex-direction: row;
-    gap: var(--gap-cards);
 }
 
 .card{
@@ -119,7 +118,9 @@ body{
     gap: var(--gap-section);
 
     position: relative;
-    animation: start 0.8s ease forwards;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
 section{
