@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(90deg, #DAFDBA 0%, #45C4B0 65%, #012030 100%);
+}
+
+.circle{
+    position: absolute;
+    bottom: 48%;
+    left: 77%;
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 0, 0.6);
+}
+
+.btn-glass{
+    position: absolute;
+    bottom: 50%;
+    left: 80%;
+    height: 50px;
+    width: 200px;
+
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+    border-right: none;
+    font-family: Lato, sans-serif;
+    color: white;
+
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+.btn-glass:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.4s ease;
+}
+
+.btn-glass:hover > .btn-glass::after{
+    border: none;
+    transition: 0.4s ease;
+}
