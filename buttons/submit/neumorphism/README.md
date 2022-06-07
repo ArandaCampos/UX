@@ -1,3 +1,3 @@
-## Button with Glassmorphism
+## Button Neumorphism
 
-![glassmorphism-btn](https://user-images.githubusercontent.com/87876734/172462966-c2969263-f137-41ff-8b11-f0cd0c360bff.gif)
+![btn-neu](https://user-images.githubusercontent.com/87876734/172479923-2d30aee8-d2fc-4289-8cbd-ed44bed181da.gif)
