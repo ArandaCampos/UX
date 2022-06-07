@@ -1,0 +1,52 @@
+:root{
+    --background-color: #e4ece8;
+    --ligth-color: #ffffff;
+    --black-color: #c2c9c5;
+    --cinzaescuro: rgb(82, 79, 79);
+    --cinzaclaro: rgb(223, 219, 219);
+    --font-color: rgba(88, 89, 90, 0.8);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+
+    background-color: var(--background-color);
+}
+
+.btn-neu{
+    position: relative;
+    top: 200px;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100px;
+    height: 50px;
+
+    padding: 10px 5px 0 5px;
+    align-items: center;
+    border-radius: 15px;
+    margin: 8px 4px 0 0;
+    border: var(--background-color) solid 2px;
+    box-shadow: 4px 4px 8px var(--black-color), -4px -4px 8px var(--ligth-color);
+
+    background-color: var(--background-color);
+
+    padding-bottom: 5px;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: var(--font-color);
+}
+
+.btn-neu:active{
+    animation: apertarBotao 0.05s backwards;
+    border: var(--background-color) solid 2px;
+    box-shadow: 9px 9px 18px var(--black-color), -9px -9px 18px var(--ligth-color), inset 4px 4px 8px var(--black-color), inset -2px -2px 4px var(--ligth-color);    
+}
