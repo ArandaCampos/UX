@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+:root{
+    --pink: #FFAAAA;
+    --blue: #3bc2c2;
+    --green: #aaffaaff;
+}
+
+body{
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+    top: 40%;
+    width: 40%;
+    height: 90px;
+
+    border-radius: 0px 0px 50px 50px;
+    background-color: white;
+}
+
+.menu-bar > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 0%;
+
+    z-index: 2;
+}
+
+.menu-bar > div.on{
+    animation: moveUp 0.5s ease forwards;
+}
+
+.circle{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--pink);
+    border: 3px solid white;
+
+    position: absolute;
+    top: 35%;
+
+    z-index: 1;
+}
+
+.circle{
+    animation: first 0.5s ease forwards;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.name-1, .name-2, .name-3{
+    text-decoration: none;
+    color: transparent;
+    position: absolute;
+    top: 35px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    height: 30px;
+}
+
+.img:nth-child(1){
+    src: "img/home-color.png";
+}
+
+@keyframes moveUp{
+    from{
+        top: 0%;
+    }
+    20%{
+        top: 0%;
+    }
+    to{
+        top: -50%;
+    }
+}
+
+@keyframes first{
+    0%, 100%{
+        left: 34.8%;
+    }
+}
+
+@keyframes oneToTwo{
+    from{
+        left: 34.8%;
+    }
+    to{
+        left: 48.3%;
+    }
+}
+
+@keyframes oneToThree{
+    from{
+        left: 34.8%;
+    }
+    to{
+        left: 61.3%;
+    }
+}
+
+@keyframes twoToOne{
+    from{
+        left: 48.3%;
+    }
+    to{
+        left: 34.8%;
+    }
+}
+
+@keyframes twoToThree{
+    from{
+        left: 48.3%;
+    }
+    to{
+        left: 61.3%;
+    }
+}
+
+@keyframes threeToOne{
+    from{
+        left: 61.3%;
+    }
+    to{
+        left: 34.8%;
+    }
+}
+
+@keyframes threeToTwo{
+    from{
+        left: 61.3%;
+    }
+    to{
+        left: 48.3%;
+    }
+}
